@@ -28,9 +28,17 @@ function createJson(name, surname, cc, age,card, activity,typeContract,month,typ
     console.log(credit);
     
     axios.post(url, credit).then((result) => {
-      console.log(result);
-      content.innerHTML = `
-        <p>Perra</p>
+        
+      alert (result.data.msg);
+      /*  content.innerHTML = `
+        <p>${result.data.msg}</p>
       `
+      */
    })
 }
+/*
+console.log(result);
+      content.innerHTML = `
+        <p>${result.data}</p>
+      `
+*/

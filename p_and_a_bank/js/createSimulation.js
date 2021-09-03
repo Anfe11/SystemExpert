@@ -22,15 +22,15 @@ function createJson(name, surname, cc, age,card, activity,typeContract,month,typ
         expenses: expenses
     };
 
+    var content = document.querySelector('.response');
     var jsonString = JSON.stringify(credit);
     var url='http://localhost:8080/sendCredit';
-    let spinnerWrapper = document.querySelector('.spinner-wrapper');
     console.log(credit);
+    
     axios.post(url, credit).then((result) => {
-      console.log(result)
+      console.log(result);
+      content.innerHTML = `
+        <p>Perra</p>
+      `
    })
-    setTimeout(()=>{
-      
-    }, 5000);
-    //sspinnerWrapper.style.display = 'none';
 }

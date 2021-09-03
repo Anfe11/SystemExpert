@@ -16,8 +16,6 @@ function script (){
 
 
 function sendCredit(){
-    /*spinnerWrapper.style.display = 'flex';
-    document.querySelector('.spinner').style.display='Inline';*/
     var name = document.querySelector('#name').value;
     var surname = document.querySelector('#surname').value;
     var cc = document.querySelector('#cc').value;
